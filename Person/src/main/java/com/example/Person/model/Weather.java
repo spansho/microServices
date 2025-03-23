@@ -1,9 +1,7 @@
-package com.example.Person.dto;
+package com.example.Person.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import com.example.Person.dto.Location;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,6 +22,6 @@ public class Weather {
     @Getter @Setter double feelsLike;
 
 
-    @ManyToOne
+    @OneToOne
     private Location location;
 }

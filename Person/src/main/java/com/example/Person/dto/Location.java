@@ -1,5 +1,7 @@
 package com.example.Person.dto;
 
+import com.example.Person.model.Person;
+import com.example.Person.model.Weather;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,8 +22,10 @@ public class Location {
 
 
    @OneToMany(mappedBy = "location", cascade = CascadeType.ALL, orphanRemoval = true)
+   private List<Person> people = new ArrayList<>();
 
-   @Getter @Setter private List<Weather> weathers = new ArrayList<>();
+   @OneToOne(mappedBy = "location", cascade = CascadeType.ALL, orphanRemoval = true)
+   @Getter @Setter private Weather weathers;
 
 
 

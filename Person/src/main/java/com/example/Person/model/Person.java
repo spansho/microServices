@@ -1,10 +1,7 @@
-package com.example.Person.dto;
+package com.example.Person.model;
+import com.example.Person.dto.Location;
 import jakarta.persistence.*;
 import lombok.*;
-
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 
 @Entity
@@ -14,7 +11,9 @@ public class Person {
     @Getter @Setter @Id @GeneratedValue
     private int id;
     @Getter @Setter @NonNull String name;
-    @Getter @Setter @NonNull String location;
 
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @Getter @Setter @NonNull
+    Location location;
 }

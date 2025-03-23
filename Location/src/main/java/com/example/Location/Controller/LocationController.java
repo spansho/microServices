@@ -2,6 +2,8 @@ package com.example.Location.Controller;
 
 import com.example.Location.Repository.*;
 import com.example.Location.dto.Location;
+import com.example.Location.dto.Person;
+import com.example.Location.dto.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -32,4 +34,5 @@ public class LocationController {
                 ? new ResponseEntity(repository.findById(location.getId()), HttpStatus.BAD_REQUEST)
                 : new ResponseEntity(repository.save(location), HttpStatus.CREATED);
     }
+
 }
