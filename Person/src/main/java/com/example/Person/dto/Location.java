@@ -20,8 +20,10 @@ public class Location {
 
 
    @OneToMany(mappedBy = "location", cascade = CascadeType.ALL, orphanRemoval = true)
+   private List<Person> people = new ArrayList<>();
 
-   @Getter @Setter private List<Weather> weathers = new ArrayList<>();
+   @OneToOne(mappedBy = "location", cascade = CascadeType.ALL, orphanRemoval = true)
+   @Getter @Setter private Weather weathers;
 
 
 

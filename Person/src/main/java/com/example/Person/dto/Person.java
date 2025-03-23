@@ -14,7 +14,9 @@ public class Person {
     @Getter @Setter @Id @GeneratedValue
     private int id;
     @Getter @Setter @NonNull String name;
-    @Getter @Setter @NonNull String location;
 
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @Getter @Setter @NonNull
+    Location location;
 }
