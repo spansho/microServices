@@ -1,4 +1,4 @@
-package com.example.Weather.dto;
+package com.example.Weather.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

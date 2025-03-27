@@ -1,8 +1,7 @@
 package com.example.Weather.Controller;
 
 import com.example.Weather.Repository.WeatherRepository;
-import com.example.Weather.dto.Person;
-import com.example.Weather.dto.Weather;
+import com.example.Weather.model.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

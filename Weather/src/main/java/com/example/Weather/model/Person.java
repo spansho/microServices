@@ -1,10 +1,6 @@
-package com.example.Weather.dto;
+package com.example.Weather.model;
 import jakarta.persistence.*;
 import lombok.*;
-
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 
 @Entity
