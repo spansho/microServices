@@ -1,7 +1,14 @@
 package com.example.Weather.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Sys{
-    String country;
-    int sunrise;
-    int sunset;
+    private String country;
+    private int sunrise;
+    private int sunset;
 }

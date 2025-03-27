@@ -1,7 +1,14 @@
 package com.example.Weather.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Wind{
-    double speed;
-    int deg;
-    double gust;
+    private double speed;
+    private int deg;
+    private double gust;
 }

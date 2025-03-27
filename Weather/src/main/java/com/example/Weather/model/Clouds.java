@@ -1,5 +1,12 @@
 package com.example.Weather.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Clouds{
-    int all;
+    private int all;
 }

@@ -1,8 +1,15 @@
 package com.example.Weather.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Weatherr{
-    int id;
-    String main;
-    String description;
-    String icon;
+    private int id;
+    private String main;
+    private String description;
+    private String icon;
 }
